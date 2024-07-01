@@ -1,5 +1,7 @@
 @import url("../fonts/cursivas/Playwrite_NG_Modern/PlaywriteNGModern-VariableFont_wght.ttf");
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');        
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&family=Playwrite+NG+Modern:wght@100..400&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -133,6 +135,26 @@ body {
     color:var(--color__textoparrafo2);
     background-color: var(--color__fondo1)
 }
+h1{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+p{
+    color: var(--color__blanco);
+    font-family: "Gwendolyn", cursive;
+    font-weight: 50;
+    font-style: normal;
+    text-align:justify;
+    color:var(--color__secundario);
+    font-size: 24px;
+    
+}
 
 header {
     height: 80px;
@@ -261,8 +283,31 @@ header {
     border-radius: 20px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
     position: relative; /* Asegura que z-index funcione */
-    z-index: 1; /* Valor más bajo para que esté debajo del menú */
+    z-index: 3; /* Valor más bajo para que esté debajo del menú */
 }
+.contenedor2 {
+    margin-top: 50px;
+    width: 90%; /* Se agrega la propiedad width: 90% */
+    max-width: 1050px;
+    min-height: 700px;
+    background: var(--color__contenedorNivel2);
+    color: var(--color__textoParrafo2);
+    /*margin: 100px auto; */
+    
+    position: relative; /* Asegura que z-index funcione */
+    /*z-index: 1; /* Valor más bajo para que esté debajo del menú */
+    margin-left: 60px;
+}
+.contenedor2 p{
+    margin-bottom: 50px;
+}
+.contenedor2 li{
+    font-size: 24px;
+    padding-left: 29px;
+    text-decoration: none;
+    margin-left: 200px; 
+}
+
 
 /*Aqui inicia carrusel*/
 .carousel-container {
@@ -353,6 +398,18 @@ header {
   }
   /*Aqui termina Carrusel*/
 
+  /* sección de imágen Inicial y bienvenida */
+.portada{
+    background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../img/Genéricas/globosPortada.jpg");
+    background-size:cover;
+    height: 45vh;
+    width: 100%;
+    text-align:center;
+    border: 5px solid #1C6EA4;
+    border-radius: 25px 0px 25px 25px;
+    position: relative; /* Asegura que z-index funcione */
+    z-index: 3; /* Valor más bajo para que esté debajo del menú */
+}
   /*Tarjetas*/
 .contenedor__tarjetas{
     display: flex;
@@ -390,34 +447,301 @@ header {
 
 .contenido__tarjeta h1{
     font-size: 23px;
-    color: var(--color__titulo4);
+    color: var(--color__titulo_default);
 }
 
 .contenido__tarjeta p{
     font-size: 17px;
-    color: var(--color__textoParrafo);
+    color: var(--color__textoparrafo2);
 }
 
 .boton__tarjeta{
     display: inline-block; /*que se vea en forma de fila*/
     background-color: var(--color__negro);
-    color: var(--color__titulo1);
+    color: var(--color__blanco);
     text-decoration: none;
     padding: 8px 16px;
     border-radius: 10px;
-    
 }
 .boton__tarjeta:hover{
     color: var(--color__principal);
     background-color: var(--color__blanco) ;
     text-decoration: none;
 }
-
-
 /*Finaliza Tarjetas*/
 
+/*inicia mapa*/
+.mapa{
+    max-width: 720px;
+    margin: 0 auto;
+    /*width="600" height="450" style="border:0;"*/
+
+    }
+.mapa iframe{
+    width: 100%;
+    border: 5px solid var(--color__fondo4) !important;
+    margin: 0 auto;
+}
+.mapa h1{
+    /*font-family: "Playwrite NG Modern", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;*/
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color:var(--color__error2);
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Padre ejercicio Flexbox*/
+.flex__container{
+    background-color: var(--color__error2);
+    border: 0px solid var(--color-borde-principal);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px;
+    -webkit-box-shadow: 14px 10px 19px -14px black;
+    -moz-box-shadow: 14px 0px 19px -14px rgba(0,0,0);
+    box-shadow: 14px 10px 19px -14px rgba(0,0,0);
+    border-radius: 20px;
+    
+}
 
 
+
+/* hijos ejercicio Flexbox */
+.box__01{
+    background-color: var(--color-primario);
+    background: url("../img/cumple/markus-spiske-aAil4k3_BA8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__02{
+    background-color: var(--color-primario);
+    background: url("../img/cumple/pastel.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__03{
+    background-color: var(--color-primario);
+    background: url("../img/cumple/shayna-douglas-9ou4URp__0s-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__04{
+    background-color: var(--color-primario);
+    background: url("../img/cumple/steven-libralon-Do1GQljlNk8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__05{
+    background-color: var(--color-primario);
+    background: url("../img/BabyShower/insung-yoon-iioAHjNYA_o-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__06{
+    background-color: var(--color-primario);
+    background: url("../img/BabyShower/madhuri-mohite-kWJm2a6DbAw-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__07{
+    background-color: var(--color-primario);
+    background: url("../img/BabyShower/mediamodifier-fdPlZXc-ZwU-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__08{
+    background-color: var(--color-primario);
+    background: url("../img/BabyShower/tuva-mathilde-loland-7hhn4SmbnT8-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__09{
+    background-color: var(--color-primario);
+    background: url("../img/bautizos/bautizo.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__10{
+    background-color: var(--color-primario);
+    background: url("../img/bautizos/bautizo2.png") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__11{
+    background-color: var(--color-primario);
+    background: url("../img/bautizos/josh-applegate-mjn1LcoU1Cw-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__12{
+    background-color: var(--color-primario);
+    background: url("../img/bautizos/stelios-tsaousidis-E_Nnkjz8z1k-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__13{
+    background-color: var(--color-primario);
+    background: url("../img/graduaciones/albert-vincent-wu-m7yOJx0ALME-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__14{
+    background-color: var(--color-primario);
+    background: url("../img/graduaciones/leon-wu-LLfRMRT-9AY-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__15{
+    background-color: var(--color-primario);
+    background: url("../img/graduaciones/rut-miit-oTglG1D4hRA-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+.box__16{
+    background-color: var(--color-primario);
+    background: url("../img/graduaciones/vasily-koloda-8CqDvPuo_kI-unsplash.jpg") center no-repeat;
+    background-size: cover;
+    width: 290px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    border: solid var(--color-borde-box) 5px;
+    color: white;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
 /* Footer */
 .footer{
     background: var(--color__nav);

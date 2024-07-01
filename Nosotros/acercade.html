@@ -1,77 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">            
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap" rel="stylesheet">
 
-<!-- Libreria Bootstrap -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>El Palacio de Cristal: Acerca de</title>
+    <title>El Palacio de Cristal, Fiestas Infantiles</title>
 </head>
+
 <body>
-    <nav> 
-         
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
+    <header>
+        <section id="logo">
+            <a href="index.html"><img id="logo-img" src="./img/Logo.jpg" alt=""></a>
+        </section>
+        
+        <nav class="menuNav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Nosotros/acercade.html">Acerca de</a></li>
+                <li><a href="../Soporte/contacto.html">Contacto</a></li>
+                <li><a href="../galeria/nuestrasInstalaciones.html">Galería</a></li>
+            </ul>
+        
+        </nav>
+        
+    </header>
 
-        <!-- label class="logo"> Logo </label> -->     
-        <ul>
-            <li><a href="../index.html">Inicio</a> </li>
-            <li><a href="./acercade.html">Acerca de</a></li>
-            <li><a href="../Soporte/contacto.html">Contacto</a></li>
-            <li><a href="../galeria/nuestrasInstalaciones.html">Galeria</a></li>
-        </ul>
-    </nav>
-    
-
-    <section class="hero">
+    <section class="portada">
         <div class="texto__inicio">
             <h1>El Palacio de Cristal: Salón de Fiestas</h1>
-            <h2>Bienvenidos</h2>
-            <h3>a mi página web</h3>
-
         </div>
     </section>
-    <section class="flex__container">
-        <div class="box__01">
-            Acerca de nosotros
+    <!--contenedor para las tarjetas-->
+    <div class="contenedor__tarjetas">
+        <!--Tarjeta 1-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/globosPortada2.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>¿Quiénes somos?</h1>
+                <p> Descripción brevemente de la empresa </p>
+            </div>
         </div>
-        <div class="box__02">
-            Caja 02
+        <!--Tarjeta 2-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/ekaterina-shevchenko-ZLTlHeKbh04-unsplash.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>Misión</h1>
+                <p> Definir el propósito central que guía nuestro trabajo.</p>
+            </div>
         </div>
-        <div class="box__03">
-            Caja 03
+        <!--Tarjeta 3-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/dnessa-franklin-P41CuOore7Y-unsplash.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>¡Somos únicos!</h1>
+                <p>Resaltar los aspectos que nos diferencian de la competencia y nos hacen especiales.</p>
+            </div>
         </div>
-        <div class="box__04">
-            Caja 04
-        </div>
-
-    </section>
-<!---->
-<div class="card">
-    <div class="card-header">
-      Featured
     </div>
-    <div class="card-body">
-        <img src="../img/whatsapp.jpg" alt="">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <!--a href="#" class="btn btn-primary">Go somewhere</a-->
-      <a href="#" class="boton__tarjeta">ver más</a>
-    </div>
-  </div>
-<!---->
-
-<!--insertar gmaps ubicación del lugar-->
-    <div class="mapa">
-        <h1>Encuentranos</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.773393461113!2d-104.66884082514657!3d24.003777879002758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869bc800dab73789%3A0xbe37d913abd0af99!2sEl%20Palacio%20de%20Cristal%20sal%C3%B3n%20de%20fiestas%20infantiles!5e0!3m2!1ses-419!2smx!4v1719451562657!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--contenedor para las tarjetas-->
+    <div class="contenedor__tarjetas">
+        <!--Tarjeta 4-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/d-l-samuels-RgaIk9gGa8c-unsplash.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>Nuestros Inicios</h1>
+                <p>Contar la historia de origen y los hitos importantes de la empresa.</p>
+            </div>
+        </div>
+        <!--Tarjeta 5-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/edgar-soto-1HIKnKtXEU0-unsplash.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>Hemos Mejorado</h1>
+                <p>Describir el proceso de evolución y logros alcanzados a lo largo del tiempo.</p>
+                <!--Botones-->
+                <a href="#" class="boton__tarjeta">Fotos de aquellos tiempos</a>
+            </div>
+        </div>
+        <!--Tarjeta 3-->
+        <div class="tarjeta">
+            <img src="../img/Genéricas/henley-design-studio-XbZgARqXROc-unsplash.jpg" alt="">
+            <div class="contenido__tarjeta">
+                <h1>Nuestros Clientes</h1>
+                <p>Público objetivo o la comunidad a la que nos dirigimos. </p>
+                <p>¿Qué necesidades satisfacemos? </p>
+                <p>Explicar cómo nuestros servicios impactan positivamente en la vida de nuestros clientes o usuarios. </p>
+                <p>¿Qué historias de éxito podemos compartir? Incluyendo testimonios y ejemplos concretos que demuestren el valor que ofrecemos.</p>
+                <!--Botones-->
+                <a href="#" class="boton__tarjeta">historias</a>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -81,7 +108,8 @@
                 <a href="https://www.facebook.com/fiestasdgo"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>    
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>    
             </div>
 
             <div class="contenido__footer">
@@ -89,7 +117,7 @@
                     <li><a href="./acercade.html">Acerca de</a></li>
                     <li><a href="#">Facturación</a></li>
                     <li><a href="#">Terminos y condiciones</a></li>
-                    <li><a href="#">Nuestras Instalaciones</a></li>
+                    <li><a href="./galeria/nuestrasInstalaciones.html">Nuestras Instalaciones</a></li>
                 </ul>
             </div>
             <div class="contenido__footer">
@@ -98,8 +126,7 @@
         </div>
 
     </footer>
-<!--Libreria Bootrstrat JavaScript-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    
+
+  <script src="./js/scripts.js"></script>
 </body>
 </html>
