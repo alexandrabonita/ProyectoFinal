@@ -1007,13 +1007,69 @@ header {
 }
 
 @media (max-width:768px){
+    .contenedor2 {
+        width: 100%;
+        max-height: 300px;
+        margin: 3% auto;        
+    }
+    .contenedor2 h1{
+        font-size: 20px;
+    }
+    .contenedor2 p{
+        font-size: 16px;
+    }
+    .contenedor2 ul{
+        font-size: 16px;
+        margin-left: 2px;
+        margin-bottom: 30;
+    }
+    .contenedor2 li{
+        font-size: 16px;
+        margin-left: 30px;
+    }
+    .portada{
+        background: linear-gradient(to bottom, #00a49c21,#03ff851d), url("../img/Genéricas/globosPortada.jpg");
+        background-size:cover;
+        height: 45vh;
+        width: 100%;
+        text-align:center;
+        border: 5px solid #1C6EA4;
+        border-radius: 25px 0px 25px 25px;
+        position: relative; /* Asegura que z-index funcione */
+        z-index: 3; /* Valor más bajo para que esté debajo del menú */
+    }
+    .portada h1{
+        font-size: 15px;
+        
+    }
+    .mapa{
+        max-width: 320px;
+        margin: 0 auto;
+        /*width="600" height="450" style="border:0;"*/
+    
+        }
+    .mapa iframe{
+        width: 100%;
+        border: 5px solid var(--color__fondo4) !important;
+        margin: 0 auto;
+    }
+    .mapa h1{
+        font-size: 24px;
+    }
+
+    
     .footer{
         text-align: left;
         padding: 15px;
     }
+    .footer .contenido__footer{
+        width: 100%;
+        margin: 2% 0%;
+        text-decoration: none;
+    }
     .footer .contenido__footer ul li{
         display: block;
-        margin: 20px 0px;
+        margin: 10px 0px;
         text-align: left;
     }
     .footer .contenido__footer li{
