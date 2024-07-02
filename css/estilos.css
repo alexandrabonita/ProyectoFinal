@@ -218,6 +218,10 @@ header {
       background-color: var(--color__hover2);
       transition: 5s;
   }
+  a:hover{
+    background-color: var(--color__hover);
+    transition: 5s; 
+}
   
 #check {
     display: none;
@@ -1076,6 +1080,7 @@ header {
         display: inline-block;
         margin: 0 5%;
     }
+    
 }
 
 
